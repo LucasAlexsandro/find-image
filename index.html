@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+
+    <title>Image Finder</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="header--container">
+        <div class="logo-container">
+          <span class="logo-find--text">find.</span>
+          <span class="logo-image--text">image</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="searchBox-wrapper">
+      <div class="searchBox--container">
+        <div class="title-container">
+          <h1 class="title">Find images for free</h1>
+        </div>
+
+        <form id="searchForm" class="searchInput-container">
+          <select class="searchInput--select" id="searchSelect">
+            <option class="searchInput--option" value="image">Images</option>
+            <option class="searchInput--option" value="video">Videos</option>
+          </select>
+
+          <input
+            id="searchInput"
+            class="searchInput--input"
+            type="text"
+            placeholder="Search images..."
+          />
+
+          <button class="searchInput--submitButton" type="submit">
+            <img src="./assets/images/icons/ic-search.svg" />
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="imagesResult--wrapper">
+      <div id="resultContainer" class="imageResult--container">
+        <!-- Resultado aqui -->
+      </div>
+    </section>
+
+    <div class="showMoreButton--container"></div>
+
+    <script src="./assets/js/script.js" type="text/javascript"></script>
+  </body>
+</html>

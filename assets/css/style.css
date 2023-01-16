@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color:#17232D;
+    --white:#FFFFFF;
+    --black:#23242A;
+    --gray: #979797;
+    --logo-color:#596066;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: "Poppins",sans-serif;
+}
+
+
+.page-header{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.header--container{
+    width: 100%;
+    max-width: 57.5rem;
+    padding: 1.875rem 0rem;
+    height: fit-content;
+    
+}
+
+.logo-container{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.logo-find--text{
+    color: var(--logo-color);
+}
+
+.logo-image--text{
+    color: var(--white);
+}
+
+.searchBox-wrapper{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.searchBox--container{
+    max-width:560px;
+    width:100%;
+}
+
+.title-container{
+    margin-top: 50px;
+}
+
+.title{
+    color: var(--white);
+    font-size: 56px;
+    font-weight: 400;
+    text-align:center;
+}
+
+.searchInput-container{
+    background-color: var(--white);
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    
+    padding: 8px;
+    border-radius:10px;
+    
+    margin-top: 30px;
+}
+
+.searchInput--select{
+    padding:12px;
+    border-radius:10px;
+    font-weight: bold;
+    font-size:16px;
+    border:1px solid var(--black);
+    
+}
+
+.searchInput--input{
+    flex: 1;
+    margin-left:8px;
+    padding: 12px 8px;
+    border:none;
+    outline:none;
+    font-size:14px;
+    font-weight:600;
+}
+
+.searchInput--input::placeholder{
+    color: var(--gray);
+}
+
+.searchInput--submitButton{
+    background-color: transparent;
+    border:none;
+    cursor:pointer;
+}
+
+.imagesResult--wrapper{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.imageResult--container{
+    width:100%;
+    max-width:920px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap: 46px;
+}
+
+
+
+.imageBox--container{
+    width:30%;
+    background-color: var(--white);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding: 18px;
+    border-radius:20px;
+    
+}
+
+.imageBox--imgContainer .imageBox--img{
+    border-radius:10px;
+    width:100%;
+    max-width: 280px;
+    max-height:150px;
+}
+
+.imageBox--informationContainer{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    
+}
+
+.imageBox--informationTitle{
+    font-size:24px;
+    color: var(--gray);
+    
+}
+
+.imageBox--downloadLink{
+    font-size: 24px;
+    color: var(--black);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 6px;
+    width:100%;
+    
+}
+
+.showMoreButton--container{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 20px 0px;
+}
+
+#showMore--button{
+    width: 100%;
+    max-width:920px;
+
+    color: var(--white);
+    font-weight:600;
+
+    border:none;
+    background: #596066;
+    text-align:center;
+    padding: 10px;
+    border-radius:20px;
+    transition: filter 0.2s;
+
+
+    cursor: pointer;
+
+}
+
+
+
+
+#showMore--button:hover{
+    filter:brightness(0.9);
+}
+
+
+@media (max-width:696px){
+    .imageResult--container{
+        flex-direction:column;
+        align-items:center;
+    }
+    
+    .imageBox--container{
+        width:100%;
+        max-width:350px;
+        padding: 8px;
+    }
+}
+
+
